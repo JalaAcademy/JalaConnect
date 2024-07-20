@@ -1,38 +1,185 @@
-.App {
-  text-align: center;
+.innerlogin{
+   padding-left: 5%;
+   padding-top: 2%;
+   margin-left: 35%;
+   margin-top: 5%;
+   margin-right: 5%;
+   height: 500px;
+   width: 350px;
+   background-color:rgb(220, 218, 218);
+   animation: bordershine 7s linear 1s infinite;
+   border-radius: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.half{
+    background:linear-gradient(to right,rgba(102, 194, 231, 0.903),white);
+    height: 250px;
+    border-radius: 5px;
+    padding-top: 2%;
+    margin-top: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.innerlogin input{
+    margin-top: 2px;
+    padding-left: 5px;
+    height: 30px;
+    width: 300px;
+    border-radius: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.innerlogin input:hover{
+    border-color: rgba(64, 162, 237, 0.57);
 }
 
-.App-link {
-  color: #61dafb;
+.submitbtn{
+background-color: rgba(67, 132, 196, 0.668);
+} 
+
+
+#googlesignup img{
+   height: 20px;
+   width: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#googlesignup .btn{
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    width: 300px;
+}
+
+#googlesignup  .btn:hover{
+    width: 300px;
+    height: 30px;
+    background-color:rgb(65,193,236);
+}
+
+.progressmaincomponent{
+    display: block;
+
+}
+
+.navbarcomponent{
+    background: linear-gradient(to left, #f6abf2, white);
+    display: grid;
+    grid-template-columns:50% auto;
+    border-radius: 5px;
+    padding:1% ;
+}
+
+.hidden{
+    display: none;
+}
+
+.hatlogo{
+    padding-left: 10%;
+    width: 30px;
+    height: 30px;
+}
+
+.navbarcomponent div{
+    display: inline-flex;
+    align-items: center;
+    gap: 5%;
+} 
+
+
+.progressmaincomponent .courses{
+    padding-left: 5%;
+      background-color: green;
+      grid-template-columns: 33% 33% 33%;
+      grid-template-rows: 100px 100px auto;
+}
+
+.progressmaincomponent .subcomponent3{
+    background-color: yellow;
+}
+
+.courseimg{
+    width: 200px;
+    height: 150px;
+}
+
+.course{
+    width:10%;
+    padding-bottom: 1%;
+    grid-template-columns: 33% 33% auto;
+    grid-template-rows: 220px 220px auto;
+}
+
+.progressfooter{
+    background: rgb(75,200,216);
+    display: grid;
+    padding-top: 5%;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.socialmedia{
+    width: 25px;
+    height: 25px;
+    padding: 2px;
+}
+
+#footersection div{
+    display: inline-flex;
+    align-items: center;
+    gap: 5%;
+} 
+
+#footersection{
+    margin-top: -1%;
+    display: grid;
+    grid-template-rows: 25% 45% auto;
+    align-items: center;
+    align-content: center;
+}
+
+#footersection div:nth-child(2){
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5%;
+    margin-left: 11%;
+}
+
+@media (max-width:600px){
+    .outerlogin img{
+        width: 100%;
+        height: 100%;
+     
+    }
+
+    .innerlogin{
+        position: absolute;
+    }
+}
+
+@media (max-width:600px){
+    .navbarcomponent{
+        display: inline-block;
+    }
+}
+
+
+@media (max-width:600px){
+    
+}
+
+@keyframes  bordershine{
+       0%{
+        border-color: transparent;
+        box-shadow : 0 0 5pxrgba(255,255,255,0.1),0 0 15px rgba(255,255,255,0.1);
+       }   
+       
+    50%{
+        border-color: rgba(79, 75, 75, 0.974);
+        box-shadow : 0 0 20px rgba(255,255,255,0.1),0 0 30px black;
+    }
+
+    100%{
+        border-color: transparent;
+        box-shadow : 0 0 5px rgba(255,255,255,0.1),0 0 15px rgba(255,255,255,0.1);
+    }
 }
